@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Estilos/Index.css" media="screen" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <nav class="nav">
+
+        <div class="nav_container">
+
+           <h1 class="nav_logo">Pasteleria "El Jefe"</h1>
+
+            <div class="nav_menu">
+                <a href="#sec1" class="nav_item">Sabores</a>
+                <a href="#sec2" class="nav_item">Adornos</a>
+                <a href="#sec3" class="nav_item">Pedidos</a>
+                <a href="#sec4" class="nav_item">Contacto</a>
+                <a href="./Admin.html" class="nav_item">Administrador</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <div class="contenedor">
+        <section id="sec1" class="seccion">
+            <div class="contenedor-texto">
+                <h2><b>Menu de Sabores</b></h2>
+                <p>Muestramos los diferentes Sabores que podemos ofrecer, que tu paladar puede saborear</p>
+            </div>
+            <div class="contenedor_card">
+                <div class="card">
+                    <figure>
+                        <img src="https://assets.tmecosys.com/image/upload/t_web600x528/img/recipe/ras/Assets/5054EE1D-15EE-412C-8AA1-72A4DA244E34/Derivates/90ADA8E1-6472-4BC8-9846-E06D88BE4211.jpg" >
+                    </figure>
+                    <div class="contenido">
+                        <h3>Chocolate</h3>
+                        <p>Pastel sabor chocolate.</p>
+                        <a href="#sec3">$500.00</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="https://i0.wp.com/jengibreycanela.com/wp-content/uploads/2020/04/Pastel-de-coco-vainilla-y-frambuesa-6.jpg?resize=750%2C547&ssl=1" >
+                    </figure>
+                    <div class="contenido">
+                        <h3>Vainilla</h3>
+                        <p>Pastel sabor Vanilla</p>
+                        <a href="#sec3">$255.00</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure>
+                        <img src="https://w0.peakpx.com/wallpaper/803/977/HD-wallpaper-minty-cake-gree-cakes-decoration-chocolate.jpg" >
+                    </figure>
+                    <div class="contenido">
+                        <h3>Menta</h3>
+                        <p>Pastel sabor Menta.</p>
+                        <a href="#sec3">$300.00</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sec2" class="seccion">
+            <div class="contenedor-texto">
+                <h2><b>Menu de Adornos</b></h2>
+                <p>Mostramos los diferentes adornos que pueden acompañar a tu pastel </p>
+            </div>
+            <div class="contenedor_card">
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="https://www.vainillamolina.com/uploads/images/prevent-buttercream-from-melting-with-these-useful-tips.png" alt="Avatar" style="width:300px;height:250px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Betún</h1>
+                        <p>Exquisito betún Sabor Vainilla</p>
+                        <a href="#sec3">$255.00</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="https://cdn2.cocinadelirante.com/sites/default/files/styles/gallerie/public/images/2019/08/como-hacer-fondant-con-leche-en-polvo-receta.jpg" alt="Avatar" style="width:300px;height:250px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Fondant</h1>
+                        <p>Contamos con diferentes colores de Fondant</p>
+                        <a href="#sec3">$255.00</a>
+                      </div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="https://canalcocina.es/medias/_cache/zoom-f4369dc19145415b679c93b5c5bba6b3-920-518.jpg" alt="Avatar" style="width:300px;height:250px;">
+                      </div>
+                      <div class="flip-card-back">
+                        <h1>Cobertura</h1>
+                        <p>Puede ponerle una cubierta a su pastel del sabor que mas guste.</p>
+                        <a href="#sec3">$255.00</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sec3">
+            <div class="contenedor-texto">
+                <h2><b>¡Realiza tu pedido!</b></h2>
+                <p>Completa el siguiente formulario para poder hacer tu pedido</p>
+            </div>
+
+            <div class="form1">
+                <form action="" class="form">
+    
+                    <div class="formu1">
+                        <h3 class="subtitulo">Datos de envío</h3>
+                            
+                        <div class="inputbox">
+                            <input type="text" required="required">
+                            <span>Nombre</span>
+                            <i></i>
+                        </div>
+    
+                        <div class="inputbox">
+                            <input type="email" required="required">
+                            <span>Correo</span>
+                            <i></i>
+                        </div>
+    
+                        <div class="inputbox">
+                            <input type="tel" required="required" maxlength="10" >
+                            <span>Teléfono</span>
+                            <i></i>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" required="required">
+                            <span>Dirección</span>
+                            <i></i>
+                        </div>
+                        <div class="inputbox">
+                            <input type="text" required="required">
+                            <span>Comentarios</span>
+                            <i></i>
+                        </div>   
+                    </div>
+                    <br><br>
+                    <div class="formu1">
+                        <h3 class="subtitulo">Personaliza tu pastel</h3>
+                        
+                        <p>Sabores</p>
+    
+                        <div class="saboresform">
+                            <input type="checkbox" id="Vainilla" name="Vainilla" required="required">
+                            <label for="Chocoltae">Chocolate</label><br>
+                            <input type="checkbox" id="Vainilla" name="Vainilla" required="required">
+                            <label for="Vainilla">Vainilla</label><br>
+                            <input type="checkbox" id="Red_velvet" name="Red_velvet" required="required">
+                            <label for="Menta">Menta</label><br>
+                        </div>
+                        
+                        <p>Adornos</p>
+    
+                        <div class="adornosform">
+                            <input type="checkbox" id="fondant" name="fondant" required="required">
+                            <label for="fondant">Fondant</label><br>
+                            <input type="checkbox" id=" betun" name="betun" required="required">
+                            <label for="betun">Betún</label><br>
+                            <input type="checkbox" id="Coberturas" name="Coberturas" required="required">
+                            <label for="Coberturas">Coberturas</label><br>
+                        </div>
+                    </div>
+    
+                    <div class="botones">
+                        <div class="boton">
+                            <button type="submit">Solicitar pedido</button>
+                        </div>
+                        <div class="boton">
+                            <button type="reset">Resetear</button>
+                        </div> 
+                    </div>
+                    
+                </form>
+            </div> 
+
+        </section>
+
+        <section id="sec4">
+            <div class="contenedor-texto">
+                <h2><b>Ubicacion</b></h2>
+            </div>
+            <div class="contenedor_ubicacion">
+                <iframe  class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3695.2700519344776!2d-100.99783064893917!3d22.153790185328322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842a9f4ce551aa17%3A0x51fbc38867ea1188!2sBrotgarten%20Pasteleria!5e0!3m2!1ses-419!2smx!4v1667626386250!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="contenedor-texto_Mapa">
+                    <p> Av. Nicolas Zapata 815, Tequis, De Tequisquiapan, 78250 San Luis, S.L.P.</p><br>
+                    <p><b>Telefono:</b> 4564654654 </p><br>
+                    <p><b>Horario:</b> 6:00 am - 10:00pm </p><br>
+                    <a class="a_circular" href="#sec1">Inicio</a>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+
+    <div class="footer-basic">
+        <footer>
+            <img src="./Imagenes/Logo.jpg" class="Logo">
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">Services</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">El Jefe © 2022</p>
+        </footer>
+    </div>  
+
+       
+</body>
+</html>

@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*---Navbar---*/
+.nav_input:checked + .nav_menu{
+    background: #4D4DFF;
+}
+.nav{
+    background: #4D4DFF;
+    height: 60px;
+    color: #fff;
+    position:fixed;
+    width: 100%;
+    z-index: 1;
+}
+.nav_logo{
+    font-size: 1.5em;
+    font-weight: 900;
+}
+.nav_container{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav_label, .nav_input{
+    display: none;
+}
+
+.nav_menu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+}
+.nav_item{
+    color: #fff;
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+.nav_item::after{
+    content: "";
+    display: block;
+    background: #fff;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .3s;
+
+}
+.nav_item:hover{
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.nav_Imagen{
+    width: 20%;
+    height: 20%;
+}
+
+/* Contenedor*/
+.contenedor{
+    position: relative;
+    max-width: 950px;
+    margin: 0 auto;
+
+}
+/* section*/
+.seccion{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Estilo Textos*/
+.contenedor-texto h2{
+    margin-top: 1.5em;
+    text-align: center;
+    font-size: 50px;
+}
+
+.contenedor-texto p{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.contenedor-texto_Mapa{
+    margin: 1em;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+
+/*Card*/
+.contenedor_card{
+    width: 100%;
+    display: flex;
+}
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+}
+
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.card .contenido a{
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    color: #4D4DFF;
+    border:  1px solid #4D4DFF;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.card .contenido a:hover{
+    
+    background: #4D4DFF;
+    color: #fff;
+}
+
+/*Card_adorno*/
+.flip-card {
+    width: 300px;
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+}
+  
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+  
+.flip-card-back {
+    background-color: #4D4DFF;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 25px;
+}
+
+.flip-card-back p{
+    line-height: 1.5;
+    color: white;
+}
+
+.flip-card-back h1{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.flip-card-back a{
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    border:  1px solid white;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.flip-card-back a:hover{
+    
+    background: white;
+    color: black;
+}
+
+/*form*/
+.form {
+    position: relative;
+    inset: 2px;
+    border-radius: 8px;
+    background: #fff;
+    padding: 20px 20px;
+    display: flex;
+    flex-flow: wrap;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5) ;
+    box-sizing: inherit;
+    margin-bottom: 50px;
+}
+
+.form h3{
+    color: #4D4DFF;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+
+.formu1{
+    width: 50%;
+}
+
+.botones{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 20px;
+    margin-top: 40px;
+}
+
+.saboresform, .adornosform,  label{
+    margin-left: 0.5rem;
+}
+
+.formu1 p{
+    color: black;
+    margin: 0.83rem ;
+    font-weight: bold;
+
+}
+
+.saboresform, .adornosform,  input{
+    color: #283773;
+}
+
+.inputbox{
+    position: relative;
+    width: 300px;
+    margin-top: 20px;
+}
+.inputbox input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+}
+
+.inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #283773;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.inputbox input:valid ~ span, .inputbox input:focus ~ span{
+    color: #4D4DFF;
+    transform: translateX(-10px) translateY(-34px);
+    font-size: 0.75em;
+}
+
+.inputbox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #4D4DFF;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+}
+
+.inputbox input:valid ~ i, .inputbox input:focus ~ i {
+    height: 44px;
+}
+
+button{
+    display: flex;
+    font-weight: 600 ;
+    border: none;
+    outline: none;
+    background: #4D4DFF;
+    padding: 11px 25px;
+    width: 200px;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: center;
+    color: #fff;
+}
+
+.form .boton {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contenedor_ubicacion{
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    border-radius: 8px;
+    background: #A8A8FF;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5) ;
+    box-sizing: inherit;
+    padding: 30px;
+    margin-bottom: 50px;
+}
+.map{
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5) ;
+    border-radius: 8px;
+}
+
+
+/*Boton a*/
+.a_circular{
+    border-radius: 25px;
+    background: #A8A8FF;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5) ;
+    box-sizing: inherit;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.a_circular:hover{
+    background: white;
+    color: black;
+}
+
+/*footer*/
+.footer-basic {
+    padding:40px 0;
+    background-color:gray;
+    color:white;
+  }
+  
+  .footer-basic ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer-basic li {
+    padding:0 10px;
+  }
+  
+  .footer-basic ul a {
+    color:inherit;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer-basic ul a:hover {
+    opacity:1;
+  }
+  
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+  }
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:13px;
+    color:white;
+    margin-bottom:0;
+  }
+
+  .Logo{
+    border-radius: 25px;
+    background: #A8A8FF;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5) ;
+    box-sizing: inherit;
+    width: 10%;
+    height: 10%;
+    margin-left: 45%;
+    margin-bottom: 20px;
+  }
